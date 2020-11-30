@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout de la actividad de resultados de la aplicación -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lluismasdeu.pprog2_p_final.activities.ResultsActivity">
+
+    <!-- Toolbar de la actividad -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/results_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Spinner de los tipos de restaurantes -->
+            <Spinner
+                android:id="@+id/restaurantTypes_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+            <!-- Botón de acceso a la actividad de perfil -->
+            <ImageView
+                android:id="@+id/profile_imageView"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_profile"
+                android:onClick="onClickProfile" />
+
+            <!-- Botón de acceso a la actividad de favoritos -->
+            <ImageView
+                android:id="@+id/favorite_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_favorite"
+                android:layout_alignTop="@+id/profile_imageView"
+                android:layout_toStartOf="@+id/profile_imageView"
+                android:onClick="onClickFavorite" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <!-- Pestañas de la actividad -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/results_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_below="@+id/results_toolbar"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary" />
+
+    <!-- ViewPager de la actividad -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/results_viewPager"
+        android:layout_below="@id/results_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout de la actividad perfil de la aplicación -->
+<!-- Layout modificable cuando el usuario solicite edición-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lluismasdeu.pprog2_p_final.activities.ProfileActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:id="@+id/Layout_photo"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <!-- Imagen del usuario -->
+            <ImageView
+                android:id="@+id/profile_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+            <!-- Boton para subir imagen -->
+            <!-- Desactivado en primera instancia -->
+            <Button
+                android:id="@+id/Button_picture"
+                android:text="@string/take_picture"
+                android:textAllCaps="false"
+                android:onClick="onTakePictureButtonClick"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:clickable="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Layout_photo">
+
+            <!-- Nombre de usuario -->
+            <TextView
+                android:text="@string/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Desactivado en primera instancia -->
+            <EditText
+                android:id="@+id/name_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:enabled="false" />
+
+            <!-- Apellido de usuario -->
+            <TextView
+                android:text="@string/surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Desactivado en primera instancia -->
+            <EditText
+                android:id="@+id/surname_editText"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+
+            <!-- Sexo de usuario -->
+            <TextView
+                android:text="@string/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Desactivado en primera instancia -->
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <RadioButton
+                    android:enabled="false"
+                    android:id="@+id/male_radioButton"
+                    android:text="@string/male"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/female_radioButton"
+                    android:text="@string/female"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false" />
+            </RadioGroup>
+
+            <!-- Descipción del usuario -->
+            <TextView
+                android:text="@string/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Desactivado en primera instancia -->
+            <EditText
+                android:enabled="false"
+                android:id="@+id/description_editText"
+                android:hint="@string/something_about_you"
+                android:lines="6"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:cursorVisible="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,90 @@
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">PPROG2-P_Final</string>
+
+    <!-- Strings de la aplicación -->
+    <string name="add_comment">Afegir comentari</string>
+    <string name="added_to_favorite">Afegit a preferits</string>
+    <string name="all">Tots</string>
+    <string name="camera_permissions_denied_message">
+        Els permissos de la càmera han sigut denegats. Per a habilitar-los, vés a Configuració.
+    </string>
+    <string name="camera_permissions_denied_title">Permissos de càmera denegats</string>
+    <string name="closing">Clausura:&#160;</string>
+    <string name="comments">Comentaris</string>
+    <string name="confirm_password">Confirmar contrasenya</string>
+    <string name="description">Descripció</string>
+    <string name="edit">Editar</string>
+    <string name="email">Direcció de correu electrònic</string>
+    <string name="favorites">Preferits</string>
+    <string name="female">Dona</string>
+    <string name="filter">Filtre</string>
+    <string name="gender">Gènere</string>
+    <string name="google_maps_api_key">AIzaSyBe-pt29XImZIY0H8R34chHQMG9WEvejl0</string>
+    <string name="login">Inici de sessió</string>
+    <string name="male">Home</string>
+    <string name="name">Nom</string>
+    <string name="nothing_to_show">Res a mostrar.</string>
+    <string name="ok">D\'acord</string>
+    <string name="only_open">Només oberts</string>
+    <string name="opening">Obertura:&#160;</string>
+    <string name="password">Contrasenya</string>
+    <string name="please_wait">Si us plau espera&#8230;</string>
+    <string name="profile">Perfil</string>
+    <string name="profile_modified_correctly">Perfil modificat correctament!</string>
+    <string name="radius_km">&#160;Km</string>
+    <string name="read_storage_permissions_denied_message">
+        Els permissos de lectura d\'emmagatzematge extern han sigut denegats. Per a habilitar-los, vés a Configuració.
+    </string>
+    <string name="read_storage_permissions_denied_title">
+        Permissos de lectura d\'emmagatzematge extern denegats
+    </string>
+    <string name="recent_searches">Cerques Recents</string>
+    <string name="register">Registrar</string>
+    <string name="save">Desa</string>
+    <string name="search">Cerca</string>
+    <string name="search_hint">Cerca&#8230;</string>
+    <string name="search_radius">Radi de cerca</string>
+    <string name="send">Envia</string>
+    <string name="something_about_you">Alguna cosa sobre tu&#8230;</string>
+    <string name="surname">Cognom</string>
+    <string name="take_picture">Fer Fotografia</string>
+    <string name="terms">Accepto termes i condicions</string>
+    <string name="username">Àlies</string>
+    <string name="write_storage_permissions_denied_message">
+        Els permissos d\'escriptura d\'emmagatzematge extern han sigut denegats. Per a habilitar-los, vés a Configuració.
+    </string>
+    <string name="write_storage_permissions_denied_title">
+        Permissos d\'escriptura d\'emmagatzematge extern denegats
+    </string>
+
+    <!-- String-Arrays de avisos -->
+    <string-array name="main_activity_messages">
+        <item>Error! El camp de l\'àlies no pot estar en blanc.</item>
+        <item>Error! El camp de la contrasenya no pot estar en blanc.</item>
+        <item>Error! No hi ha cap usuari registrat amb aquest/a adreça de correu electrònic/àlies, i aquesta contrasenya.</item>
+        <item>Sessió iniciada correctament</item>
+    </string-array>
+    <string-array name="register_activity_messages">
+        <item>Error! El camp del nom no pot estar en blanc.</item>
+        <item>Error! El camp del cognom no pot estar en blanc.</item>
+        <item>Error! El camp de l\'àlies no pot estar en blanc.</item>
+        <item>Error! El camp de l\'adreça de correu electrònic no pot estar en blanc.</item>
+        <item>Error! L\'adreça de correu electrònic no és vàlida.</item>
+        <item>Error! Els camps de contrasenya no poden estar en blanc.</item>
+        <item>Error! Les contrasenyes no coincideixen.</item>
+        <item>Error! Has d\'acceptar els termes i les condicions.</item>
+        <item>Error! Aquest usuari ja existeix.</item>
+        <item>Registrat correctament</item>
+    </string-array>
+    <string-array name="search_activity_messages">
+        <item>Error! El camp de cerca no pot estar en blanc</item>
+        <item>No hi ha resultats amb aquesta cerca</item>
+        <item>Error! Hi ha problemes amb la teva ubicació actual</item>
+        <item>Cercat correctament</item>
+    </string-array>
+    <string-array name="description_activity_messages">
+        <item>Error! El comentari no pot estar en blanc</item>
+        <item>Comentari afegit correctament</item>
+    </string-array>
+</resources>

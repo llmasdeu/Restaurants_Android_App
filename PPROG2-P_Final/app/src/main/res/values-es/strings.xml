@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">PPROG2-P_Final</string>
+
+    <!-- Strings de la aplicación -->
+    <string name="add_comment">Añadir comentario</string>
+    <string name="added_to_favorite">Añadido a favoritos</string>
+    <string name="all">Todo</string>
+    <string name="camera_permissions_denied_message">
+        Los permisos de cámara han sido denegados. Ve a Ajustes para habilitarlos.
+    </string>
+    <string name="camera_permissions_denied_title">Permisos de cámara denegados</string>
+    <string name="closing">Hora de cierre:&#160;</string>
+    <string name="comments">Comentarios</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="description">Descripción</string>
+    <string name="edit">Editar</string>
+    <string name="email">Dirección de correo electrónico</string>
+    <string name="favorites">Favoritos</string>
+    <string name="female">Mujer</string>
+    <string name="filter">Filtro</string>
+    <string name="gender">Género</string>
+    <string name="google_maps_api_key">AIzaSyBe-pt29XImZIY0H8R34chHQMG9WEvejl0</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="male">Hombre</string>
+    <string name="name">Nombre</string>
+    <string name="nothing_to_show">Nada que mostrar</string>
+    <string name="ok">De acuerdo</string>
+    <string name="only_open">Sólo abierto</string>
+    <string name="opening">Hora de apertura:&#160;</string>
+    <string name="password">Contraseña</string>
+    <string name="please_wait">Porfavor espera&#8230;</string>
+    <string name="profile">Perfil</string>
+    <string name="profile_modified_correctly">¡Perfil modificado correctamente!</string>
+    <string name="radius_km">&#160;Km</string>
+    <string name="read_storage_permissions_denied_message">
+        Los permisos de lectura de almacenamiento externo han sido denegados. Ve a Ajustes para
+        habilitarlos.
+    </string>
+    <string name="read_storage_permissions_denied_title">
+        Permisos de lectura de almacenamiento externo denegados
+    </string>
+    <string name="recent_searches">Búsquedas Recientes</string>
+    <string name="register">Registrar</string>
+    <string name="save">Guardar</string>
+    <string name="search">Buscar</string>
+    <string name="search_hint">Buscar&#8230;</string>
+    <string name="search_radius">Radio de búsqueda</string>
+    <string name="send">Enviar</string>
+    <string name="something_about_you">Algo sobre ti&#8230;</string>
+    <string name="surname">Apellido</string>
+    <string name="take_picture">Hacer fotografía</string>
+    <string name="terms">Aceptar términos y condiciones</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="write_storage_permissions_denied_message">
+        Los permisos de escritura de almacenamiento externo han sido denegados. Ve a Ajustes para
+        habilitarlos.
+    </string>
+    <string name="write_storage_permissions_denied_title">
+        Permisos de escritura de almacenamiento externo denegados
+    </string>
+
+    <!-- String-Arrays de avisos -->
+    <string-array name="main_activity_messages">
+        <item>¡Error! El nombre de usuario no puede estar en blanco.</item>
+        <item>¡Error! La contraseña no puede estar en blanco.</item>
+        <item>¡Error! No hay ningún usuario registrado con estos credenciales.</item>
+        <item>Sesión iniciada correctamente</item>
+    </string-array>
+    <string-array name="register_activity_messages">
+        <item>¡Error! El nombre no puede estar en blanco.</item>
+        <item>¡Error! El apellido no puede estar en blanco.</item>
+        <item>¡Error! El nombre de usuario no puede estar en blanco.</item>
+        <item>¡Error! La dirección de correo electrónico no puede estar en blanco.</item>
+        <item>¡Error! La dirección de correo electrónico no es válida.</item>
+        <item>¡Error! La contraseña no puede estar en blanco.</item>
+        <item>¡Error! Las contraseñas no son iguales.</item>
+        <item>¡Error! Debes aceptar los términos y condiciones.</item>
+        <item>¡Error! Este usuario ya existe.</item>
+        <item>Registrado correctamente</item>
+    </string-array>
+    <string-array name="search_activity_messages">
+        <item>¡Error! El campo de búsqueda no puede estar en blanco</item>
+        <item>No hay resultados de la búsqueda introducida</item>
+        <item>¡Error! Ha habido problemas con tu localización actual</item>
+        <item>Búsqueda correcta</item>
+    </string-array>
+    <string-array name="description_activity_messages">
+        <item>¡Error! El comentario no puede estar en blanco</item>
+        <item>Comentario añadido correctamente</item>
+    </string-array>
+</resources>

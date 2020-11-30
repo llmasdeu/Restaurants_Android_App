@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/listview_cell_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/resultTitle_textView"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/listview_cell_image"
+            android:layout_toEndOf="@id/listview_cell_image"
+            android:layout_marginBottom="4dp" />
+
+        <RatingBar
+            android:id="@+id/restaurantRating_ratingBar"
+            android:isIndicator="true"
+            android:numStars="5"
+            style="@style/customRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/resultTitle_textView"
+            android:layout_below="@+id/resultTitle_textView"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_alignStart="@id/resultTitle_textView"
+            android:id="@+id/resultAddress_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/restaurantRating_ratingBar"
+            android:layout_alignParentEnd="true"
+            android:textSize="12dp"/>
+    </LinearLayout>
+</LinearLayout>

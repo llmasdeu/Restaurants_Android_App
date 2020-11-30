@@ -1,0 +1,90 @@
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">PPROG2-P_Final</string>
+
+    <!-- Strings de la aplicación -->
+    <string name="add_comment">Add comment</string>
+    <string name="added_to_favorite">Added to favorites</string>
+    <string name="all">All</string>
+    <string name="camera_permissions_denied_message">
+        Camera permissions have been denied. To enable them, go to Settings.
+    </string>
+    <string name="camera_permissions_denied_title">Camera Permissions Not Granted</string>
+    <string name="closing">Closing:&#160;</string>
+    <string name="comments">Comments</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="description">Description</string>
+    <string name="edit">Edit</string>
+    <string name="email">E-mail</string>
+    <string name="favorites">Favorites</string>
+    <string name="female">Female</string>
+    <string name="filter">Filter</string>
+    <string name="gender">Gender</string>
+    <string name="google_maps_api_key">AIzaSyBe-pt29XImZIY0H8R34chHQMG9WEvejl0</string>
+    <string name="login">Login</string>
+    <string name="male">Male</string>
+    <string name="name">Name</string>
+    <string name="nothing_to_show">Nothing to show.</string>
+    <string name="ok">OK</string>
+    <string name="only_open">Only Open</string>
+    <string name="opening">Opening:&#160;</string>
+    <string name="password">Password</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="profile">Profile</string>
+    <string name="profile_modified_correctly">Profile modified correctly!</string>
+    <string name="radius_km">&#160;Km</string>
+    <string name="read_storage_permissions_denied_message">
+        Read External Storage permissions have been denied. To enable them, go to Settings.
+    </string>
+    <string name="read_storage_permissions_denied_title">
+        Read External Storage Permissions Not Granted
+    </string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="register">Register</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search&#8230;</string>
+    <string name="search_radius">Search radius</string>
+    <string name="send">Send</string>
+    <string name="something_about_you">Something about you&#8230;</string>
+    <string name="surname">Surname</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="terms">Accept terms &amp; conditions</string>
+    <string name="username">Username</string>
+    <string name="write_storage_permissions_denied_message">
+        Write External Storage permissions have been denied. To enable them, go to Settings.
+    </string>
+    <string name="write_storage_permissions_denied_title">
+        Write External Storage Permissions Not Granted
+    </string>
+
+    <!-- String-Arrays de avisos -->
+    <string-array name="main_activity_messages">
+        <item>Error! Username field can\'t be blank.</item>
+        <item>Error! Password field can\'t be blank.</item>
+        <item>Error! There isn\'t any user registered with this e-mail/username and password.</item>
+        <item>Logged in correctly</item>
+    </string-array>
+    <string-array name="register_activity_messages">
+        <item>Error! Name field can\'t be blank.</item>
+        <item>Error! Surname field can\'t be blank.</item>
+        <item>Error! Username can\'t be blank.</item>
+        <item>Error! E-mail field can\'t be blank.</item>
+        <item>Error! E-mail address is not valid.</item>
+        <item>Error! Password fields can\'t be blank.</item>
+        <item>Error! Passwords don\'t match.</item>
+        <item>Error! You must accept Terms &amp; Conditions.</item>
+        <item>Error! This user already exists.</item>
+        <item>Registered correctly</item>
+    </string-array>
+    <string-array name="search_activity_messages">
+        <item>Error! Search field can\'t be blank</item>
+        <item>There are no places matching your search</item>
+        <item>Error! There are issues with your current location</item>
+        <item>Searched correctly</item>
+    </string-array>
+    <string-array name="description_activity_messages">
+        <item>Error! The commentary can\'t be blank</item>
+        <item>Commentary added correctly</item>
+    </string-array>
+</resources>

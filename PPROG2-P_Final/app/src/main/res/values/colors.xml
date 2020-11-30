@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Colores principales -->
+    <color name="colorAccent">#21a7fa</color>
+    <color name="colorPrimary">#0a7ff5</color>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <!-- Colores definidos -->
+    <color name="errorMessageColor">#ea272a</color>
+    <color name="favoriteButtonColor">#ea272a</color>
+    <color name="noFavoriteButtonColor">#afafaf</color>
+    <color name="iconsColor">#000000</color>
+    <color name="imageButtonsColor">#00ffffff</color>
+    <color name="loginButtonColor">#d67aade4</color>
+    <color name="registerButtonColor">#cce799d4</color>
+    <color name="registerUserButtonColor">#d67aade4</color>
+    <color name="searchButtonColor">#d67aade4</color>
+</resources>

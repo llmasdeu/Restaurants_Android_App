@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/perfil_view_mode">
+
+    <!-- Botones de editar y perfil -->
+    <item android:id="@+id/action_editProfile"
+        android:title="@string/edit"
+        android:icon="@drawable/ic_edit"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_viewProfile_favorites"
+        android:title="@string/favorites"
+        android:icon="@drawable/ic_favorite"
+        app:showAsAction="ifRoom" />
+</menu>

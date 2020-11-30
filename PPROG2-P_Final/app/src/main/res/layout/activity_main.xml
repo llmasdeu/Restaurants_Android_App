@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout de la actividad principal de la aplicación -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lluismasdeu.pprog2_p_final.activities.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/form_vertical_margin"
+        android:paddingRight="@dimen/form_vertical_margin">
+
+        <!-- Logo de la aplicación -->
+        <ImageView
+            android:id="@+id/logo_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <!-- Nombre de usuario -->
+        <TextView
+            android:text="@string/username"
+            android:textSize="@dimen/default_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/usernameLogin_editText"
+            android:hint="@string/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+        <!-- Contraseña del usuario -->
+        <TextView
+            android:text="@string/password"
+            android:textSize="@dimen/default_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/password_editText"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+        <!-- Mensaje de error (no visible) -->
+        <TextView
+            android:id="@+id/errorLogin_textView"
+            android:textSize="9dp"
+            android:textColor="@color/errorMessageColor"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <!-- Boton para iniciar sesión -->
+        <Button
+            android:id="@+id/login_button"
+            android:text="@string/login"
+            android:background="@color/loginButtonColor"
+            android:onClick="onLoginButtonClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+        <!-- Boton para registrar usuario -->
+        <Button
+            android:text="@string/register"
+            android:background="@color/registerButtonColor"
+            android:onClick="onRegisterButtonClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>

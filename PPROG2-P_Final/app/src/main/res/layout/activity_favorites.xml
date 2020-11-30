@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lluismasdeu.pprog2_p_final.activities.FavoritesActivity">
+
+    <!-- Agregamos Toolbar Con spinner centrado-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/results_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/restaurantTypes_spinner"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_profile"
+                android:id="@+id/profile_imageView"
+                android:onClick="onClickProfile" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/favorites_tabsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_below="@+id/results_toolbar"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/favorites_viewPager"
+        android:layout_below="@id/favorites_tabsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

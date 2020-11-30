@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout de la actividad registro de la aplicación -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lluismasdeu.pprog2_p_final.activities.RegisterActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:id="@+id/Layout_photo"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <!-- Imagen del usuario -->
+            <ImageView
+                android:id="@+id/profile_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+            <!-- Boton para subir imagen -->
+            <Button
+                android:text="@string/take_picture"
+                android:textAllCaps="false"
+                android:onClick="onTakePictureButtonClick"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Layout_photo">
+
+            <!-- Nombre de usuario -->
+            <TextView
+                android:text="@string/name"
+                android:textSize="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/name_editText"
+                android:hint="@string/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <!-- Apellido de usuario -->
+            <TextView
+                android:text="@string/surname"
+                android:textSize="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/surname_editText"
+                android:hint="@string/surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <TextView
+                android:text="@string/username"
+                android:textSize="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/usernameRegister_editText"
+                android:hint="@string/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <!-- E-mail del usuario -->
+            <TextView
+                android:text="@string/email"
+                android:textSize="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/email_editText"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <!-- Password de usuario -->
+            <TextView
+                android:text="@string/password"
+                android:textSize="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/passwordRegister_editText"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <!-- Repetir password de usuario -->
+            <TextView
+                android:text="@string/confirm_password"
+                android:textSize="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/confirmPasswordRegister_editText"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <!-- Sexo de usuario -->
+            <TextView
+                android:text="@string/gender"
+                android:textSize="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <RadioButton
+                    android:id="@+id/male_radioButton"
+                    android:text="@string/male"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/female_radioButton"
+                    android:text="@string/female"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <!-- Descipción del usuario -->
+            <TextView
+                android:text="@string/description"
+                android:textSize="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/description_editText"
+                android:hint="@string/something_about_you"
+                android:lines="6"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:cursorVisible="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <!-- Términos y condiciones -->
+            <CheckBox
+                android:id="@+id/terms_checkBox"
+                android:text="@string/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <!-- Notificación de error -->
+            <TextView
+                android:id="@+id/errorRegister_textView"
+                android:textSize="@dimen/terms_checkbox"
+                android:textColor="@color/errorMessageColor"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <!-- Boton para registrar -->
+            <Button
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:background="@color/registerUserButtonColor"
+                android:onClick="onRegisterUserButtonClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
